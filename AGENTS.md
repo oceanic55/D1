@@ -7,7 +7,7 @@ A static web client for the D1 Upload system. Mirrors the macOS SwiftUI app in f
 ## File Structure
 
 ```
-web/
+D1/
 ├── index.html   — HTML structure and all CSS styles
 ├── app.js       — All JavaScript logic
 ├── spec.md      — Original implementation spec
@@ -195,4 +195,4 @@ Per-row action menus use a delegated `click` listener on `document`. Opening a m
 
 ## Hosting
 
-Any static host works. Recommended: Cloudflare Pages — deploy by uploading the `web/` folder or connecting a git repository. No build step required.
+Any static host works. Recommended: Cloudflare Pages — deploy by uploading the `D1/` folder or connecting a git repository. No build step required.

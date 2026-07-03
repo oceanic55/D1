@@ -52,7 +52,7 @@ No changes to endpoint logic.
 ### Technology
 
 - Vanilla HTML, CSS, JavaScript — no framework, no build step
-- Single file: `web/index.html`
+- Single file: `D1/index.html`
 - `localStorage` for token and server URL persistence
 - Native browser `fetch()` for all API calls
 - Native HTML5 drag-and-drop events for file upload
@@ -213,7 +213,7 @@ Match the macOS app's minimal aesthetic. No external CSS frameworks.
 ## File Structure
 
 ```
-web/
+D1/
 └── index.html      ← entire app (HTML + CSS + JS inline)
 ```
 
@@ -223,7 +223,7 @@ No dependencies, no package.json, no build step. The file can be opened directly
 
 ## Hosting
 
-Recommended: Cloudflare Pages (free tier, deploys from a git push or a direct upload of the `web/` folder). Any static host works equally well.
+Recommended: Cloudflare Pages (free tier, deploys from a git push or a direct upload of the `D1/` folder). Any static host works equally well.
 
 ---
 
