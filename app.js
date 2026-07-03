@@ -622,10 +622,7 @@ async function savePrompts() {
       const content = promptDrafts[prompt.path] || prompt.content;
       const res = await fetch(`${serverUrl}/instructions/${encodeURIComponent(prompt.path)}?device_id=${encodeURIComponent(DEFAULT_DEVICE_ID)}`, {
         method: 'PUT',
-        // Use a text/plain body so browsers do not send a CORS preflight.
-        // The current Worker preflight allows GET/POST/PATCH/DELETE but not PUT,
-        // which otherwise makes instruction saves fail before reaching the server.
-        headers: { 'Content-Type': 'text/plain;charset=UTF-8', 'X-Upload-Token': token },
+        headers: { 'Content-Type': 'application/json', 'X-Upload-Token': token },
         body: JSON.stringify({ content })
       });
       if (!res.ok) {
